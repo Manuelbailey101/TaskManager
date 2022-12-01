@@ -24,15 +24,31 @@ function saveTask(){
 console.log("Saving task!");
 let title = $("#txtTitle").val();
 let description = $("#txtDescription").val();
-let dueDate = $("#txtDueDate").val();
-let category = $("#txtCategory").val();
+let dueDate = $("#txtdueDate").val();
+let category = $("#selCategory").val();
 let priority = $("#txtPriority").val();
 let cost = $("#txtCost").val();
 
 //create a new instance of the task (object)
 let task = new Task(isImportant,title,description,dueDate,category,priority,cost);
 console.log(task);
+displayTask(task);
 //console log the instance (object)
+}
+
+function displayTask(task) {
+    let syntax = `<div class="task">
+    <div>
+    <i class="fa-regular fa-heart"></i>
+       <h5>${task.title}</h5>
+       <p>${task.description}</p>
+       </div>
+       <label>${task.dueDate}</label>
+       <label>${task.category}</label>
+       <label>${task.cost}</label>
+    </div>`; // html code
+    
+    $("#pendingTasks").append(syntax);
 }
 
 function toggleDetails(){

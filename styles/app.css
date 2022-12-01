@@ -7,28 +7,39 @@ min-height: 100vh;
 
 nav {
     height: 40px;
+    background-color: #000000;
 }
 
 h1{
     text-align: center;
-    color: darkblue;
+    color: white;
     margin: 0;
+}
+
+h3, h4 {
+    color: white;
+}
+
+label{
+   color: #cacacb;
 }
 
 
 .main-container{
     display: flex;
     height: calc(100vh - 70px);
+    background-image: url("https://lh6.googleusercontent.com/proxy/EN-btGOQ5wb8dzXA0ogEKoqmrpyjzick5Nd1xcyxo6kVr6tDnPw66TGwvecamn7wEEN6SOhtJpLBvRnaDk5_mdru3rHyuKDhXvzHjJC6vs4m0lV43d3JRh51eYMz=w1200-h630-p-k-no-nu");
+ background-size: cover;
 }
 
 #secList {
     flex: 2;
-   background-color:mediumslateblue;
+   background-color:#77201446;
 }
 
 #secForm {
     flex: 1;
-    background-color: salmon;
+    background-color:#00000060;
 }
 
 footer {
@@ -50,4 +61,18 @@ footer {
 
 #topIcon.fa-solid {
 color: green;
+}
+
+.task{
+    border: 1px solid #cacacb;
+    margin-bottom: 10px;
+    padding: 12px 12px;
+}
+
+.task .description{
+    flex: 4;
+}
+
+.task .label {
+    flex: 1;
 }
