@@ -1,0 +1,53 @@
+
+html,body{
+margin: 0;
+padding: 0;
+min-height: 100vh;
+} 
+
+nav {
+    height: 40px;
+}
+
+h1{
+    text-align: center;
+    color: darkblue;
+    margin: 0;
+}
+
+
+.main-container{
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+#secList {
+    flex: 2;
+   background-color:mediumslateblue;
+}
+
+#secForm {
+    flex: 1;
+    background-color: salmon;
+}
+
+footer {
+    height: 30px;
+    background-color: #e7e7e7;
+}
+
+.my-control {
+    margin-bottom: 10px;
+
+}
+
+
+.topIcon{
+    font-size: 32px;
+    cursor: pointer;
+    display: block;
+}
+
+#topIcon.fa-solid {
+color: green;
+}

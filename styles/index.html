@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <nav>
+        <h1>Super Task Manager</h1>
+    </nav>
+
+    <main class="main-container">
+          
+        <section id="secList">
+            <h3>Pending Tasks</h3>
+        
+           <button id="btnToggleDetails" class="btn btn-sm btn-info">Hide/Show details</button>
+        </section>
+        <section id="secForm">
+            <h4>Save Task</h4>
+        
+
+
+            <div class="my-control">
+                <label class="form-label">Important</label>
+                <i  id="topIcon" class="fa-regular fa-heart topIcon"></i>
+            </div>
+        
+            <div class="my-control">
+            <label class="form-label">Title</label>
+            <input id="txtTitle" class="form-control" type="text">
+        </div>
+
+        <div class="my-control">
+            <label class="form-label">Description</label>
+            <textarea id="txtDescription" class="form-control" rows="3"></textarea>
+        </div>
+
+        <div class="my-control">
+            <label class="form-label">Due Date</label>
+            <input id="txtdueDate" class="form-control" type="date">
+        </div>
+
+        <div class="my-control">
+            <label class="form-label">Category</label>
+            <select id="selCategory" class="form-select">
+                <option>House</option>
+                <option>Family</option>
+                <option>Work</option>
+                <option>Personal</option>
+            </select>
+        </div>
+
+        <div class="my-control">
+            <label class="form-label">Priority</label>
+            <input id="txtPriority" class="form-control" type="number">
+        </div>
+
+        <div class="my-control">
+            <label class="form-label">Cost</label>
+            <input id="txtCost" class="form-control" type="number">
+        </div>
+
+        <button id="btnSave" class="btn btn-dark">
+            <i class="fa-solid fa-mug-hot"></i>
+            Save Task
+        </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        By: Manuel Bailey
+    </footer>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" ></script>
+<script src="./scripts/task.js"></script>
+<script src="./scripts/app.js"></script>
+</body>
+</html>
+
+<!--
+    important
+    title
+    dueDate
+    category
+    priority level
+    cost
+-->
